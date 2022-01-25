@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "description": "A sequential access memory with int cells",
+        "pack_format": 8
+    }
+}
