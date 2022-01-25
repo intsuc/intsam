@@ -37,6 +37,6 @@ data modify storage intsam.__temp__:api/load __input__ set value {addr: 1024}
 function intsam:api/load
 
 # There is effectively no upper bound on the address space.
-data modify storage intsam.__temp__:api/store __input__ set value {data: 3, addr: 16777216}
-function intsam:api/store
+data modify storage intsam.__temp__:api/load __input__ set value {addr: 16777216}
+function intsam:api/load
 ```
