@@ -1,6 +1,9 @@
 #> intsam:core/write/0-255/
 #
 # @within core/write/
+#
+# @writes
+#   storage intsam.front: memory
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 0..63 run function intsam:core/write/0-255/0-63/
 execute if score intsam.__temp__:offset intsam.__temp__ matches 64..127 run function intsam:core/write/0-255/64-127/

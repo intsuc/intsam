@@ -3,6 +3,13 @@
 # @within
 #   intsam:core/seek/
 #   intsam:core/seek/back
+#
+# @reads
+#   storage intsam.static: empty_page
+#
+# @writes
+#   storage intsam.front: memory
+#   storage intsam.back: memory
 
 execute unless data storage intsam.back: memory[0] run data modify storage intsam.front: memory append from storage intsam.static: empty_page
 

@@ -1,6 +1,9 @@
 #> intsam:core/read/0-255/64-127/
 #
 # @within core/read/0-255/
+#
+# @reads
+#   storage intsam.front: memory
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 64..79 run function intsam:core/read/0-255/64-127/64-79/
 execute if score intsam.__temp__:offset intsam.__temp__ matches 80..95 run function intsam:core/read/0-255/64-127/80-95/

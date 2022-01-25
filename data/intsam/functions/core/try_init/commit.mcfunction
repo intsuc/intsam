@@ -1,6 +1,14 @@
 #> intsam:core/try_init/commit
 #
 # @within intsam:core/try_init/
+#
+# @writes
+#   storage intsam.front: head
+#   storage intsam.front: memory
+#   storage intsam.back: memory
+#   storage intsam.static: page_size
+#   storage intsam.static: empty_page
+#   storage intsam.initialized: initialized
 
 data modify storage intsam.front: head set value -1
 data modify storage intsam.front: memory set value []

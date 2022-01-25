@@ -3,6 +3,10 @@
 # @within
 #   intsam:core/seek/
 #   intsam:core/seek/front
+#
+# @writes
+#   storage intsam.front: memory
+#   storage intsam.back: memory
 
 data modify storage intsam.back: memory append from storage intsam.front: memory[-1]
 data remove storage intsam.front: memory[-1]
