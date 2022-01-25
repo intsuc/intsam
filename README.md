@@ -22,7 +22,7 @@ function intsam:api/store
 # Load data at address `2`.
 data modify storage intsam.__temp__:api/load __input__ set value {addr: 2}
 function intsam:api/load
-data get storage intsam.__temp__:api/load __output__.data
+data get storage intsam.__temp__:api/load __output__
 
 # Consecutive access to the same page is fast.
 data modify storage intsam.__temp__:api/load __input__ set value {addr: 255}
