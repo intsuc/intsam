@@ -8,7 +8,6 @@
 #
 # @output
 #   storage intsam.__temp__:api/load __output__
-#       data: int
-#       success: bool
+#       data: int?
 
 function intsam:core/load/

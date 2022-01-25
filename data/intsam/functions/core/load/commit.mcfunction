@@ -9,5 +9,3 @@ scoreboard players operation intsam.__temp__:offset intsam.__temp__ %= intsam.__
 function intsam:core/read/
 
 execute store result storage intsam.__temp__:api/load __output__.data int 1.0 run scoreboard players get intsam.__temp__:data intsam.__temp__
-
-data modify storage intsam.__temp__:api/load __output__.success set value true
