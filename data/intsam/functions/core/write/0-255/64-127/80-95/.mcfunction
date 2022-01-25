@@ -3,7 +3,8 @@
 # @within core/write/0-255/64-127/
 #
 # @writes
-#   storage intsam.front: memory
+#   storage intsam.front:
+#       memory: int_array[]
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 80..83 run function intsam:core/write/0-255/64-127/80-95/80-83/
 execute if score intsam.__temp__:offset intsam.__temp__ matches 84..87 run function intsam:core/write/0-255/64-127/80-95/84-87/

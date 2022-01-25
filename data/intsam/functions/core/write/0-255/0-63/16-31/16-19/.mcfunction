@@ -3,7 +3,8 @@
 # @within core/write/0-255/0-63/16-31/
 #
 # @writes
-#   storage intsam.front: memory
+#   storage intsam.front:
+#       memory: int_array[]
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 16 store result storage intsam.front: memory[-1][16] int 1.0 run scoreboard players get intsam.__temp__:data intsam.__temp__
 execute if score intsam.__temp__:offset intsam.__temp__ matches 17 store result storage intsam.front: memory[-1][17] int 1.0 run scoreboard players get intsam.__temp__:data intsam.__temp__

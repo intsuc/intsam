@@ -3,7 +3,8 @@
 # @within core/read/0-255/
 #
 # @reads
-#   storage intsam.front: memory
+#   storage intsam.front:
+#       memory: int_array[]
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 0..15 run function intsam:core/read/0-255/0-63/0-15/
 execute if score intsam.__temp__:offset intsam.__temp__ matches 16..31 run function intsam:core/read/0-255/0-63/16-31/

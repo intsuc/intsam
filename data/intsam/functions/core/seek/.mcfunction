@@ -4,7 +4,8 @@
 #   score intsam.__temp__:index intsam.__temp__
 #
 # @writes
-#   storage intsam.state: head
+#   storage intsam.state:
+#       head: int
 
 execute store result score intsam.__temp__:head intsam.__temp__ store result score intsam.__temp__:old_head intsam.__temp__ run data get storage intsam.state: head 1.0
 

@@ -3,7 +3,8 @@
 # @within core/read/0-255/192-255/224-239/
 #
 # @reads
-#   storage intsam.front: memory
+#   storage intsam.front:
+#       memory: int_array[]
 
 execute if score intsam.__temp__:offset intsam.__temp__ matches 232 store result score intsam.__temp__:data intsam.__temp__ run data get storage intsam.front: memory[-1][232] 1.0
 execute if score intsam.__temp__:offset intsam.__temp__ matches 233 store result score intsam.__temp__:data intsam.__temp__ run data get storage intsam.front: memory[-1][233] 1.0

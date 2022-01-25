@@ -5,11 +5,14 @@
 #   intsam:core/seek/back
 #
 # @reads
-#   storage intsam.const: empty_page
+#   storage intsam.const:
+#       empty_page: int_array
 #
 # @writes
-#   storage intsam.front: memory
-#   storage intsam.back: memory
+#   storage intsam.front:
+#       memory: int_array[]
+#   storage intsam.back:
+#       memory: int_array[]
 
 execute unless data storage intsam.back: memory[0] run data modify storage intsam.front: memory append from storage intsam.const: empty_page
 

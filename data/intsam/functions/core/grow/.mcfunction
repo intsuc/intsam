@@ -1,6 +1,10 @@
 #> intsam:core/grow/
 #
 # @within intsam:api/grow
+#
+# @writes
+#   storage intsam.state:
+#       max_size: int
 
 function intsam:core/init/
 

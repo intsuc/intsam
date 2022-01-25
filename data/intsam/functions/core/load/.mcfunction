@@ -1,6 +1,12 @@
 #> intsam:core/load/
 #
 # @within intsam:api/load
+#
+# @reads
+#   storage intsam.state:
+#       max_size: int
+#   storage intsam.const:
+#       page_size: int
 
 function intsam:core/init/
 
