@@ -5,7 +5,7 @@
 # @writes
 #   storage intsam.state:
 #       head: int
-#       max_size: int
+#       capacity: int
 #   storage intsam.front:
 #       memory: int_array[]
 #   storage intsam.back:
@@ -18,7 +18,7 @@
 #       initialized: bool
 
 data modify storage intsam.state: head set value -1
-data modify storage intsam.state: max_size set value 0
+data modify storage intsam.state: capacity set value 0
 
 data modify storage intsam.front: memory set value []
 
