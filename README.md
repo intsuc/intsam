@@ -28,12 +28,12 @@ data get storage intsam.__temp__:api/load __output__.data
 data modify storage intsam.__temp__:api/load __input__ set value {addr: 255}
 function intsam:api/load
 
-# Access to other pages is slower the further away they are.
+# Access to other pages becomes slower as the distance increases.
 data modify storage intsam.__temp__:api/load __input__ set value {addr: 256}
 function intsam:api/load
-data modify storage intsam.__temp__:api/load __input__ set value {addr: 512}
+data modify storage intsam.__temp__:api/load __input__ set value {addr: 768}
 function intsam:api/load
-data modify storage intsam.__temp__:api/load __input__ set value {addr: 1024}
+data modify storage intsam.__temp__:api/load __input__ set value {addr: 0}
 function intsam:api/load
 
 # There is effectively no upper bound on the address space.
